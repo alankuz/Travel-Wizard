@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             
 
     <title>TravelWizard</title>
 </head>
 
 <body>
-    <form action="#">
-        <input type="text" id="country">
-        <input type="submit" id="submit" value="submit">
-
-    </form>
+<div class="container">
+        <div class="row">
+                <div class="col s12">
+                    <h2><i class="medium material-icons">public</i>TravelWizard</h2>
+                    <p class="">So, where to?</p> 
+                    <form action="#">
+                    <input type="text" id="country" placeholder="Which country are you travelling to?">
+                    <input type="submit" id="submit" value="submit">
+                    </form>
+                </div>    
+        </div>        
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assest/javascript/app.js"></script>
 </body>
