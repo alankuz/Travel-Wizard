@@ -13,24 +13,30 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+
     <title>TravelWizard</title>
 </head>
 
 <body>
 
     <div class="container">
+
         <div class="row">
             <div class="col s12">
                 <h2><i class="medium material-icons">public</i>TravelWizard</h2>
                 <p class="">So, where to?</p>
                 <form action="#">
-                    <input type="text" id="country" placeholder="Which country are you travelling to?">
+                    <input type="text" name="search" list="search" id="country" placeholder="Which country are you travelling to?">
+                    <datalist id="search"></datalist>
                     <input type="submit" id="submit" value="submit">
                 </form>
             </div>
         </div>
     </div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assest/javascript/app.js"></script>
 </body>
