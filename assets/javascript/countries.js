@@ -2,1191 +2,953 @@ var countrylist ={
 
 country= {
 countryName:"Andorra",
-"iso_alpha2": "AD",
-"continent": "EU"
+code: "AD"
 
 },country= {                                    
 countryName:"United Arab Emirates",
-"iso_alpha2": "AE",
-"continent": "AS"
+code: "AE"
 },
 country= {                        
 countryName:"Afghanistan",
-"iso_alpha2": "AF",
-"continent": "AS"
+code: "AF"
 },
 country= {                                 
 countryName:"Antigua and Barbuda",
-"iso_alpha2": "AG",
-"continent": "NA"
+code: "AG"
 },
 country= {                         
 countryName:"Anguilla",
-"iso_alpha2": "AI",
-"continent": "NA"
+code: "AI"
 },
 country= {                                    
 countryName:"Albania",
-"iso_alpha2": "AL",
-"continent": "EU"
+code: "AL"
 },
 country= {                                     
 countryName:"Armenia",
-"iso_alpha2": "AM",
-"continent": "AS"
+code: "AM"
 },
 country= {                                     
 countryName:"Angola",
-"iso_alpha2": "AO",
-"continent": "AF"
+code: "AO"
 },
 country= {                                      
 countryName:"Argentina",
-"iso_alpha2": "AR",
-"continent": "SA"
+code: "AR"
 },
 country= {                                   
 countryName:"American Samoa",
-"iso_alpha2": "AS",
-"continent": "OC"
+code: "AS"
 },
 country= {                              
 countryName:"Austria",
-"iso_alpha2": "AT",
-"continent": "EU"
+code: "AT"
 },
 country= {                                     
 countryName:"Australia",
-"iso_alpha2": "AU",
-"continent": "OC"
+code: "AU"
 },
 country= {                                   
 countryName:"Aruba",
-"iso_alpha2": "AW",
-"continent": "NA"
+code: "AW"
 },
 country= {                                       
 countryName:"Azerbaijan",
-"iso_alpha2": "AZ",
-"continent": "AS"
+code: "AZ"
 },
 country= {                                  
 countryName:"Bosnia and Herzegovina",
-"iso_alpha2": "BA",
-"continent": "EU"
+code: "BA"
 },
 country= {                      
 countryName:"Barbados",
-"iso_alpha2": "BB",
-"continent": "NA"
+code: "BB"
 },
 country= {                                    
 countryName:"Bangladesh",
-"iso_alpha2": "BD",
-"continent": "AS"
+code: "BD"
 },
 country= {                                  
 countryName:"Belgium",
-"iso_alpha2": "BE",
-"continent": "EU"
+code: "BE"
 },
 country= {                                     
 countryName:"Burkina Faso",
-"iso_alpha2": "BF",
-"continent": "AF"
+code: "BF"
 },
 country= {                                
 countryName:"Bulgaria",
-"iso_alpha2": "BG",
-"continent": "EU"
+code: "BG"
 },
 country= {                                    
 countryName:"Bahrain",
-"iso_alpha2": "BH",
-"continent": "AS"
+code: "BH"
 },
 country= {                                     
 countryName:"Burundi",
-"iso_alpha2": "BI",
-"continent": "AF"
+code: "BI"
 },
 country= {                                     
 countryName:"Benin",
-"iso_alpha2": "BJ",
-"continent": "AF"
+code: "BJ"
 },
 country= {                                       
 countryName:"Saint Barthélemy",
-"iso_alpha2": "BL",
-"continent": "NA"
+code: "BL"
 },
 country= {                            
 countryName:"Bermuda",
-"iso_alpha2": "BM",
-"continent": "NA"
+code: "BM"
 },
 country= {                                     
 countryName:"Brunei",
-"iso_alpha2": "BN",
-"continent": "AS"
+code: "BN"
 },
 country= {                                      
 countryName:"Bolivia",
-"iso_alpha2": "BO",
-"continent": "SA"
+code: "BO"
 },
 country= {                                     
 countryName:"Brazil",
-"iso_alpha2": "BR",
-"continent": "SA"
+code: "BR"
 },
 country= {                                      
 countryName:"Bahamas",
-"iso_alpha2": "BS",
-"continent": "NA"
+code: "BS"
 },
 country= {                                     
 countryName:"Bhutan",
-"iso_alpha2": "BT",
-"continent": "AS"
+code: "BT"
 },
 country= {                                      
 countryName:"Botswana",
-"iso_alpha2": "BW",
-"continent": "AF"
+code: "BW"
 },
 country= {                                    
 countryName:"Belarus",
-"iso_alpha2": "BY",
-"continent": "EU"
+code: "BY"
 },
 country= {                                     
 countryName:"Belize",
-"iso_alpha2": "BZ",
-"continent": "NA"
+code: "BZ"
 },
 country= {                                      
 countryName:"Canada",
-"iso_alpha2": "CA",
-"continent": "NA"
+code: "CA"
 },
 country= {                                      
 countryName:"Cocos Islands",
-"iso_alpha2": "CC",
-"continent": "SA"
+code: "CC"
 },
 country= {                               
 countryName:"Democratic Republic of the Congo",
-"iso_alpha2": "CD",
-"continent": "AF"
+code: "CD"
 },
 country= {            
 countryName:"Central African Republic",
-"iso_alpha2": "CF",
-"continent": "AF"
+code: "CF"
 },
 country= {                    
 countryName:"Republic of the Congo",
-"iso_alpha2": "CG",
-"continent": "AF"
+code: "CG"
 },
 country= {                       
 countryName:"Switzerland",
-"iso_alpha2": "CH",
-"continent": "EU"
+code: "CH"
 },
 country= {                                 
 countryName:"Ivory Coast",
-"iso_alpha2": "CI",
-"continent": "AF"
+code: "CI"
 },
 country= {                                 
 countryName:"Cook Islands",
-"iso_alpha2": "CK",
-"continent": "OC"
+code: "CK"
 },
 country= {                                
 countryName:"Chile",
-"iso_alpha2": "CL",
-"continent": "SA"
+code: "CL"
 },
 country= {                                       
 countryName:"Cameroon",
-"iso_alpha2": "CM",
-"continent": "AF"
+code: "CM"
 },
 country= {                                    
 countryName:"China",
-"iso_alpha2": "CN",
-"continent": "AS"
+code: "CN"
 },
 country= {                                       
 countryName:"Colombia",
-"iso_alpha2": "CO",
-"continent": "SA"
+code: "CO"
 },
 country= {                                    
 countryName:"Costa Rica",
-"iso_alpha2": "CR",
-"continent": "NA"
+code: "CR"
 },
 country= {                                  
 countryName:"Cuba",
-"iso_alpha2": "CU",
-"continent": "NA"
+code: "CU"
 },
 country= {                                        
 countryName:"Cape Verde",
-"iso_alpha2": "CV",
-"continent": "AF"
+code: "CV"
 },
 country= {                                  
 countryName:"Christmas Island",
-"iso_alpha2": "CX",
-"continent": "OC"
+code: "CX"
 },
 country= {                            
 countryName:"Cyprus",
-"iso_alpha2": "CY",
-"continent": "EU"
+code: "CY"
 },
 country= {                                      
 countryName:"Czech Republic",
-"iso_alpha2": "CZ",
-"continent": "EU"
+code: "CZ"
 },
 country= {                              
 countryName:"Germany",
-"iso_alpha2": "DE",
-"continent": "EU"
+code: "DE"
 },
 country= {                                     
 countryName:"Djibouti",
-"iso_alpha2": "DJ",
-"continent": "AF"
+code: "DJ"
 },
 country= {                                    
 countryName:"Denmark",
-"iso_alpha2": "DK",
-"continent": "EU"
+code: "DK"
 },
 country= {                                     
 countryName:"Dominica",
-"iso_alpha2": "DM",
-"continent": "NA"
+code: "DM"
 },
 country= {                                    
 countryName:"Dominican Republic",
-"iso_alpha2": "DO",
-"continent": "NA"
+code: "DO"
 },
 country= {                          
 countryName:"Algeria",
-"iso_alpha2": "DZ",
-"continent": "AF"
+code: "DZ"
 },
 country= {                                     
 countryName:"Ecuador",
-"iso_alpha2": "EC",
-"continent": "SA"
+code: "EC"
 },
 country= {                                     
 countryName:"Estonia",
-"iso_alpha2": "EE",
-"continent": "EU"
+code: "EE"
 },
 country= {                                     
 countryName:"Egypt",
-"iso_alpha2": "EG",
-"continent": "AF"
+code: "EG"
 },
 country= {                                       
 countryName:"Western Sahara",
-"iso_alpha2": "EH",
-"continent": "AF"
+code: "EH"
 },
 country= {                              
 countryName:"Eritrea",
-"iso_alpha2": "ER",
-"continent": "AF"
+code: "ER"
 },
 country= {                                     
 countryName:"Spain",
-"iso_alpha2": "ES",
-"continent": "EU"
+code: "ES"
 },
 country= {                                       
 countryName:"Ethiopia",
-"iso_alpha2": "ET",
-"continent": "AF"
+code: "ET"
 },
 country= {                                    
 countryName:"Finland",
-"iso_alpha2": "FI",
-"continent": "EU"
+code: "FI"
 },
 country= {                                     
 countryName:"Fiji",
-"iso_alpha2": "FJ",
-"continent": "OC"
+code: "FJ"
 },
 country= {                                        
 countryName:"Falkland Islands",
-"iso_alpha2": "FK",
-"continent": "SA"
+code: "FK"
 },
 country= {                            
 countryName:"Micronesia",
-"iso_alpha2": "FM",
-"continent": "OC"
+code: "FM"
 },
 country= {                                  
 countryName:"Faroe Islands",
-"iso_alpha2": "FO",
-"continent": "EU"
+code: "FO"
 },
 country= {                               
 countryName:"France",
-"iso_alpha2": "FR",
-"continent": "EU"
+code: "FR"
 },
 country= {                                      
 countryName:"Gabon",
-"iso_alpha2": "GA",
-"continent": "AF"
+code: "GA"
 },
 country= {                                       
 countryName:"United Kingdom",
-"iso_alpha2": "GB",
-"continent": "EU"
+code: "GB"
 },
 country= {                              
 countryName:"Grenada",
-"iso_alpha2": "GD",
-"continent": "NA"
+code: "GD"
 },
 country= {                                     
 countryName:"Georgia",
-"iso_alpha2": "GE",
-"continent": "AS"
+code: "GE"
 },
 country= {                                     
 countryName:"French Guiana",
-"iso_alpha2": "GF",
-"continent": "SA"
+code: "GF"
 },
 country= {                               
 countryName:"Guernsey",
-"iso_alpha2": "GG",
-"continent": "EU"
+code: "GG"
 },
 country= {                                    
 countryName:"Ghana",
-"iso_alpha2": "GH",
-"continent": "AF"
+code: "GH"
 },
 country= {                                       
 countryName:"Gibraltar",
-"iso_alpha2": "GI",
-"continent": "EU"
+code: "GI"
 },
 country= {                                   
 countryName:"Greenland",
-"iso_alpha2": "GL",
-"continent": "NA"
+code: "GL"
 },
 country= {                                   
 countryName:"Gambia",
-"iso_alpha2": "GM",
-"continent": "AF"
+code: "GM"
 },
 country= {                                      
 countryName:"Guinea",
-"iso_alpha2": "GN",
-"continent": "AF"
+code: "GN"
 },
 country= {                                      
 countryName:"Guadeloupe",
-"iso_alpha2": "GP",
-"continent": "NA"
+code: "GP"
 },
 country= {                                  
 countryName:"Equatorial Guinea",
-"iso_alpha2": "GQ",
-"continent": "AF"
+code: "GQ"
 },
 country= {                           
 countryName:"Greece",
-"iso_alpha2": "GR",
-"continent": "EU"
+code: "GR"
 },
 country= {                                      
 countryName:"South Georgia and the South Sandwich Islands",
-"iso_alpha2": "GS",
-"continent": "AN"
+code: "GS"
 },
 country= {
 countryName:"Guatemala",
-"iso_alpha2": "GT",
-"continent": "NA"
+code: "GT"
 },
 country= {                                   
 countryName:"Guam",
-"iso_alpha2": "GU",
-"continent": "OC"
+code: "GU"
 },
 country= {                                        
 countryName:"Guinea-Bissau",
-"iso_alpha2": "GW",
-"continent": "AF"
+code: "GW"
 },
 country= {                               
 countryName:"Guyana",
-"iso_alpha2": "GY",
-"continent": "SA"
+code: "GY"
 },
 country= {                                      
 countryName:"Hong Kong",
-"iso_alpha2": "HK",
-"continent": "AS"
+code: "HK"
 },
 country= {                                   
 countryName:"Honduras",
-"iso_alpha2": "HN",
-"continent": "NA"
+code: "HN"
 },
 country= {                                    
 countryName:"Croatia",
-"iso_alpha2": "HR",
-"continent": "EU"
+code: "HR"
 },
 country= {                                     
 countryName:"Haiti",
-"iso_alpha2": "HT",
-"continent": "NA"
+code: "HT"
 },
 country= {                                       
 countryName:"Hungary",
-"iso_alpha2": "HU",
-"continent": "EU"
+code: "HU"
 },
 country= {                                     
 countryName:"Indonesia",
-"iso_alpha2": "ID",
-"continent": "AS"
+code: "ID"
 },
 country= {                                   
 countryName:"Ireland",
-"iso_alpha2": "IE",
-"continent": "EU"
+code: "IE"
 },
 country= {                                     
 countryName:"Israel",
-"iso_alpha2": "IL",
-"continent": "AS"
+code: "IL"
 },
 country= {                                      
 countryName:"Isle of Man",
-"iso_alpha2": "IM",
-"continent": "EU"
+code: "IM"
 },
 country= {                                 
 countryName:"India",
-"iso_alpha2": "IN",
-"continent": "AS"
+code: "IN"
 },
 country= {                                       
 countryName:"Iraq",
-"iso_alpha2": "IQ",
-"continent": "AS"
+code: "IQ"
 },
 country= {                                        
 countryName:"Iran",
-"iso_alpha2": "IR",
-"continent": "AS"
+code: "IR"
 },
 country= {                                        
 countryName:"Iceland",
-"iso_alpha2": "IS",
-"continent": "EU"
+code: "IS"
 },
 country= {                                     
 countryName:"Italy",
-"iso_alpha2": "IT",
-"continent": "EU"
+code: "IT"
 },
 country= {                                       
 countryName:"Jersey",
-"iso_alpha2": "JE",
-"continent": "EU"
+code: "JE"
 },
 country= {                                      
 countryName:"Jamaica",
-"iso_alpha2": "JM",
-"continent": "NA"
+code: "JM"
 },
 country= {                                     
 countryName:"Jordan",
-"iso_alpha2": "JO",
-"continent": "AS"
+code: "JO"
 },
 country= {                                      
 countryName:"Japan",
-"iso_alpha2": "JP",
-"continent": "AS"
+code: "JP"
 },
 country= {                                       
 countryName:"Kenya",
-"iso_alpha2": "KE",
-"continent": "AF"
+code: "KE"
 },
 country= {                                       
 countryName:"Kyrgyzstan",
-"iso_alpha2": "KG",
-"continent": "AS"
+code: "KG"
 },
 country= {                                  
 countryName:"Cambodia",
-"iso_alpha2": "KH",
-"continent": "AS"
+code: "KH"
 },
 country= {                                    
 countryName:"Kiribati",
-"iso_alpha2": "KI",
-"continent": "OC"
+code: "KI"
 },
 country= {                                    
 countryName:"Comoros",
-"iso_alpha2": "KM",
-"continent": "AF"
+code: "KM"
 },
 country= {                                     
 countryName:"Saint Kitts and Nevis",
-"iso_alpha2": "KN",
-"continent": "NA"
+code: "KN"
 },
 country= {                       
 countryName:"North Korea",
-"iso_alpha2": "KP",
-"continent": "AS"
+code: "KP"
 },
 country= {                                 
 countryName:"South Korea",
-"iso_alpha2": "KR",
-"continent": "AS"
+code: "KR"
 },
 country= {                                 
 countryName:"Kuwait",
-"iso_alpha2": "KW",
-"continent": "AS"
+code: "KW"
 },
 country= {                                      
 countryName:"Cayman Islands",
-"iso_alpha2": "KY",
-"continent": "NA"
+code: "KY"
 },
 country= {                              
 countryName:"Kazakhstan",
-"iso_alpha2": "KZ",
-"continent": "AS"
+code: "KZ"
 },
 country= {                                  
 countryName:"Laos",
-"iso_alpha2": "LA",
-"continent": "AS"
+code: "LA"
 },
 country= {                                        
 countryName:"Lebanon",
-"iso_alpha2": "LB",
-"continent": "AS"
+code: "LB"
 },
 country= {                                     
 countryName:"Saint Lucia",
-"iso_alpha2": "LC",
-"continent": "NA"
+code: "LC"
 },
 country= {                                 
 countryName:"Liechtenstein",
-"iso_alpha2": "LI",
-"continent": "EU"
+code: "LI"
 },
 country= {                               
 countryName:"Sri Lanka",
-"iso_alpha2": "LK",
-"continent": "AS"
+code: "LK"
 },
 country= {                                   
 countryName:"Liberia",
-"iso_alpha2": "LR",
-"continent": "AF"
+code: "LR"
 },
 country= {                                     
 countryName:"Lesotho",
-"iso_alpha2": "LS",
-"continent": "AF"
+code: "LS"
 },
 country= {                                     
 countryName:"Lithuania",
-"iso_alpha2": "LT",
-"continent": "EU"
+code: "LT"
 },
 country= {                                   
 countryName:"Luxembourg",
-"iso_alpha2": "LU",
-"continent": "EU"
+code: "LU"
 },
 country= {                                  
 countryName:"Latvia",
-"iso_alpha2": "LV",
-"continent": "EU"
+code: "LV"
 },
 country= {                                      
 countryName:"Libya",
-"iso_alpha2": "LY",
-"continent": "AF"
+code: "LY"
 },
 country= {                                       
 countryName:"Morocco",
-"iso_alpha2": "MA",
-"continent": "AF"
+code: "MA"
 },
 country= {                                     
 countryName:"Monaco",
-"iso_alpha2": "MC",
-"continent": "EU"
+code: "MC"
 },
 country= {                                      
 countryName:"Moldova",
-"iso_alpha2": "MD",
-"continent": "EU"
+code: "MD"
 },
 country= {                                     
 countryName:"Montenegro",
-"iso_alpha2": "ME",
-"continent": "EU"
+code: "ME"
 },
 country= {                                  
 countryName:"Saint Martin",
-"iso_alpha2": "MF",
-"continent": "NA"
+code: "MF"
 },
 country= {                                
 countryName:"Madagascar",
-"iso_alpha2": "MG",
-"continent": "AF"
+code: "MG"
 },
 country= {                                  
 countryName:"Marshall Islands",
-"iso_alpha2": "MH",
-"continent": "OC"
+code: "MH"
 },
 country= {                            
 countryName:"Macedonia",
-"iso_alpha2": "MK",
-"continent": "EU"
+code: "MK"
 },
 country= {                                   
 countryName:"Mali",
-"iso_alpha2": "ML",
-"continent": "AF"
+code: "ML"
 },
 country= {                                        
 countryName:"Myanmar",
-"iso_alpha2": "MM",
-"continent": "AS"
+code: "MM"
 },
 country= {                                     
 countryName:"Mongolia",
-"iso_alpha2": "MN",
-"continent": "AS"
+code: "MN"
 },
 country= {                                    
 countryName:"Macao",
-"iso_alpha2": "MO",
-"continent": "AS"
+code: "MO"
 },
 country= {                                       
 countryName:"Northern Mariana Islands",
-"iso_alpha2": "MP",
-"continent": "OC"
+code: "MP"
 },
 country= {                    
 countryName:"Martinique",
-"iso_alpha2": "MQ",
-"continent": "NA"
+code: "MQ"
 },
 country= {                                  
 countryName:"Mauritania",
-"iso_alpha2": "MR",
-"continent": "AF"
+code: "MR"
 },
 country= {                                  
 countryName:"Montserrat",
-"iso_alpha2": "MS",
-"continent": "NA"
+code: "MS"
 },
 country= {                                  
 countryName:"Malta",
-"iso_alpha2": "MT",
-"continent": "EU"
+code: "MT"
 },
 country= {                                       
 countryName:"Mauritius",
-"iso_alpha2": "MU",
-"continent": "AF"
+code: "MU"
 },
 country= {                                   
 countryName:"Maldives",
-"iso_alpha2": "MV",
-"continent": "AS"
+code: "MV"
 },
 country= {                                    
 countryName:"Malawi",
-"iso_alpha2": "MW",
-"continent": "AF"
+code: "MW"
 },
 country= {                                      
 countryName:"Mexico",
-"iso_alpha2": "MX",
-"continent": "NA"
+code: "MX"
 },
 country= {                                      
 countryName:"Malaysia",
-"iso_alpha2": "MY",
-"continent": "AS"
+code: "MY"
 },
 country= {                                    
 countryName:"Mozambique",
-"iso_alpha2": "MZ",
-"continent": "AF"
+code: "MZ"
 },
 country= {                                  
 countryName:"Namibia",
-"iso_alpha2": "NA",
-"continent": "AF"
+code: "NA"
 },
 country= {                                     
 countryName:"New Caledonia",
-"iso_alpha2": "NC",
-"continent": "OC"
+code: "NC"
 },
 country= {                               
 countryName:"Niger",
-"iso_alpha2": "NE",
-"continent": "AF"
+code: "NE"
 },
 country= {                                       
 countryName:"Norfolk Island",
-"iso_alpha2": "NF",
-"continent": "OC"
+code: "NF"
 },
 country= {                              
 countryName:"Nigeria",
-"iso_alpha2": "NG",
-"continent": "AF"
+code: "NG"
 },
 country= {                                     
 countryName:"Nicaragua",
-"iso_alpha2": "NI",
-"continent": "NA"
+code: "NI"
 },
 country= {                                   
 countryName:"Netherlands",
-"iso_alpha2": "NL",
-"continent": "EU"
+code: "NL"
 },
 country= {                                 
 countryName:"Norway",
-"iso_alpha2": "NO",
-"continent": "EU"
+code: "NO"
 },
 country= {                                      
 countryName:"Nepal",
-"iso_alpha2": "NP",
-"continent": "AS"
+code: "NP"
 },
 country= {                                       
 countryName:"Niue",
-"iso_alpha2": "NU",
-"continent": "OC"
+code: "NU"
 },
 country= {                                        
 countryName:"New Zealand",
-"iso_alpha2": "NZ",
-"continent": "OC"
+code: "NZ"
 },
 country= {                                 
 countryName:"Oman",
-"iso_alpha2": "OM",
-"continent": "AS"
+code: "OM"
 },
 country= {                                        
 countryName:"Panama",
-"iso_alpha2": "PA",
-"continent": "NA"
+code: "PA"
 },
 country= {                                      
 countryName:"Peru",
-"iso_alpha2": "PE",
-"continent": "SA"
+code: "PE"
 },
 country= {                                        
 countryName:"French Polynesia",
-"iso_alpha2": "PF",
-"continent": "OC"
+code: "PF"
 },
 country= {                            
 countryName:"Papua New Guinea",
-"iso_alpha2": "PG",
-"continent": "OC"
+code: "PG"
 },
 country= {                            
 countryName:"Philippines",
-"iso_alpha2": "PH",
-"continent": "AS"
+code: "PH"
 },
 country= {                                 
 countryName:"Pakistan",
-"iso_alpha2": "PK",
-"continent": "AS"
+code: "PK"
 },
 country= {                                    
 countryName:"Poland",
-"iso_alpha2": "PL",
-"continent": "EU"
+code: "PL"
 },
 country= {                                      
 countryName:"Saint Pierre and Miquelon",
-"iso_alpha2": "PM",
-"continent": "NA"
+code: "PM"
 },
 country= {                   
 countryName:"Pitcairn",
-"iso_alpha2": "PN",
-"continent": "OC"
+code: "PN"
 },
 country= {                                    
 countryName:"Puerto Rico",
-"iso_alpha2": "PR",
-"continent": "NA"
+code: "PR"
 },
 country= {                                 
 countryName:"Palestinian Territory",
-"iso_alpha2": "PS",
-"continent": "AS"
+code: "PS"
 },
 country= {                       
 countryName:"Portugal",
-"iso_alpha2": "PT",
-"continent": "EU"
+code: "PT"
 },
 country= {                                    
 countryName:"Palau",
-"iso_alpha2": "PW",
-"continent": "OC"
+code: "PW"
 },
 country= {                                       
 countryName:"Paraguay",
-"iso_alpha2": "PY",
-"continent": "SA"
+code: "PY"
 },
 country= {                                    
 countryName:"Qatar",
-"iso_alpha2": "QA",
-"continent": "AS"
+code: "QA"
 },
 country= {                                       
 countryName:"Reunion",
-"iso_alpha2": "RE",
-"continent": "AF"
+code: "RE"
 },
 country= {                                     
 countryName:"Romania",
-"iso_alpha2": "RO",
-"continent": "EU"
+code: "RO"
 },
 country= {                                     
 countryName:"Serbia",
-"iso_alpha2": "RS",
-"continent": "EU"
+code: "RS"
 },
 country= {                                      
 countryName:"Russia",
-"iso_alpha2": "RU",
-"continent": "EU"
+code: "RU"
 },
 country= {                                      
 countryName:"Rwanda",
-"iso_alpha2": "RW",
-"continent": "AF"
+code: "RW"
 },
 country= {                                      
 countryName:"Saudi Arabia",
-"iso_alpha2": "SA",
-"continent": "AS"
+code: "SA"
 },
 country= {                                
 countryName:"Solomon Islands",
-"iso_alpha2": "SB",
-"continent": "OC"
+code: "SB"
 },
 country= {                             
 countryName:"Seychelles",
-"iso_alpha2": "SC",
-"continent": "AF"
+code: "SC"
 },
 country= {                                  
 countryName:"Sudan",
-"iso_alpha2": "SD",
-"continent": "AF"
+code: "SD"
 },
 country= {                                       
 countryName:"Sweden",
-"iso_alpha2": "SE",
-"continent": "EU"
+code: "SE"
 },
 country= {                                      
 countryName:"Singapore",
-"iso_alpha2": "SG",
-"continent": "AS"
+code: "SG"
 },
 country= {                                   
 countryName:"Saint Helena",
-"iso_alpha2": "SH",
-"continent": "AF"
+code: "SH"
 },
 country= {                                
 countryName:"Slovenia",
-"iso_alpha2": "SI",
-"continent": "EU"
+code: "SI"
 },
 country= {                                    
 countryName:"Svalbard and Jan Mayen",
-"iso_alpha2": "SJ",
-"continent": "EU"
+code: "SJ"
 },
 country= {                      
 countryName:"Slovakia",
-"iso_alpha2": "SK",
-"continent": "EU"
+code: "SK"
 },
 country= {                                    
 countryName:"Sierra Leone",
-"iso_alpha2": "SL",
-"continent": "AF"
+code: "SL"
 },
 country= {                                
 countryName:"San Marino",
-"iso_alpha2": "SM",
-"continent": "EU"
+code: "SM"
 },
 country= {                                  
 countryName:"Senegal",
-"iso_alpha2": "SN",
-"continent": "AF"
+code: "SN"
 },
 country= {                                     
 countryName:"Somalia",
-"iso_alpha2": "SO",
-"continent": "AF"
+code: "SO"
 },
 country= {                                     
 countryName:"Suriname",
-"iso_alpha2": "SR",
-"continent": "SA"
+code: "SR"
 },
 country= {                                    
 countryName:"South Sudan",
-"iso_alpha2": "SS",
-"continent": "AF"
+code: "SS"
 },
 country= {                                 
 countryName:"Sao Tome and Principe",
-"iso_alpha2": "ST",
-"continent": "AF"
+code: "ST"
 },
 country= {                       
 countryName:"El Salvador",
-"iso_alpha2": "SV",
-"continent": "NA"
+code: "SV"
 },
 country= {                                 
 countryName:"Syria",
-"iso_alpha2": "SY",
-"continent": "AS"
+code: "SY"
 },
 country= {                                       
 countryName:"Swaziland",
-"iso_alpha2": "SZ",
-"continent": "AF"
+code: "SZ"
 },
 country= {                                   
 countryName:"Turks and Caicos Islands",
-"iso_alpha2": "TC",
-"continent": "NA"
+code: "TC"
 },
 country= {                    
 countryName:"Chad",
-"iso_alpha2": "TD",
-"continent": "AF"
+code: "TD"
 },
 country= {                                        
 countryName:"Togo",
-"iso_alpha2": "TG",
-"continent": "AF"
+code: "TG"
 },
 country= {                                        
 countryName:"Thailand",
-"iso_alpha2": "TH",
-"continent": "AS"
+code: "TH"
 },
 country= {                                    
 countryName:"Tajikistan",
-"iso_alpha2": "TJ",
-"continent": "AS"
+code: "TJ"
 },
 country= {                                  
 countryName:"East Timor",
-"iso_alpha2": "TL",
-"continent": "OC"
+code: "TL"
 },
 country= {                                  
 countryName:"Turkmenistan",
-"iso_alpha2": "TM",
-"continent": "AS"
+code: "TM"
 },
 country= {                                
 countryName:"Tunisia",
-"iso_alpha2": "TN",
-"continent": "AF"
+code: "TN"
 },
 country= {                                     
 countryName:"Tonga",
-"iso_alpha2": "TO",
-"continent": "OC"
+code: "TO"
 },
 country= {                                       
 countryName:"Turkey",
-"iso_alpha2": "TR",
-"continent": "AS"
+code: "TR"
 },
 country= {                                      
 countryName:"Trinidad and Tobago",
-"iso_alpha2": "TT",
-"continent": "NA"
+code: "TT"
 },
 country= {                         
 countryName:"Tuvalu",
-"iso_alpha2": "TV",
-"continent": "OC"
+code: "TV"
 },
 country= {                                      
 countryName:"Taiwan",
-"iso_alpha2": "TW",
-"continent": "AS"
+code: "TW"
 },
 country= {                                      
 countryName:"Tanzania",
-"iso_alpha2": "TZ",
-"continent": "AF"
+code: "TZ"
 },
 country= {                                    
 countryName:"Ukraine",
-"iso_alpha2": "UA",
-"continent": "EU"
+code: "UA"
 },
 country= {                                     
 countryName:"Uganda",
-"iso_alpha2": "UG",
-"continent": "AF"
+code: "UG"
 },
 country= {                                      
 countryName:"United States",
-"iso_alpha2": "US",
-"continent": "NA"
+code: "US"
 },
 country= {                               
 countryName:"Uruguay",
-"iso_alpha2": "UY",
-"continent": "SA"
+code: "UY"
 },
 country= {                                     
 countryName:"Uzbekistan",
-"iso_alpha2": "UZ",
-"continent": "AS"
+code: "UZ"
 },
 country= {                                  
 countryName:"Vatican",
-"iso_alpha2": "VA",
-"continent": "EU"
+code: "VA"
 },
 country= {                                     
 countryName:"Saint Vincent and the Grenadines",
-"iso_alpha2": "VC",
-"continent": "NA"
+code: "VC"
 },
 country= {            
 countryName:"Venezuela",
-"iso_alpha2": "VE",
-"continent": "SA"
+code: "VE"
 },
 country= {                                   
 countryName:"British Virgin Islands",
-"iso_alpha2": "VG",
-"continent": "NA"
+code: "VG"
 },
 country= {                      
 countryName:"U.S. Virgin Islands",
-"iso_alpha2": "VI",
-"continent": "NA"
+code: "VI"
 },
 country= {                         
 countryName:"Vietnam",
-"iso_alpha2": "VN",
-"continent": "AS"
+code: "VN"
 },
 country= {                                     
 countryName:"Vanuatu",
-"iso_alpha2": "VU",
-"continent": "OC"
+code: "VU"
 },
 country= {                                     
 countryName:"Wallis and Futuna",
-"iso_alpha2": "WF",
-"continent": "OC"
+code: "WF"
 },
 country= {                           
 countryName:"Samoa",
-"iso_alpha2": "WS",
-"continent": "OC"
+code: "WS"
 },
 country= {                                       
 countryName:"Kosovo",
-"iso_alpha2": "XK",
-"continent": "EU"
+code: "XK"
 },
 country= {                                      
 countryName:"Yemen",
-"iso_alpha2": "YE",
-"continent": "AS"
+code: "YE"
 },
 country= {                                       
 countryName:"Mayotte",
-"iso_alpha2": "YT",
-"continent": "AF"
+code: "YT"
 },
 country= {                                     
 countryName:"South Africa",
-"iso_alpha2": "ZA",
-"continent": "AF"
+code: "ZA"
 },
 country= {                                
 countryName:"Zambia",
-"iso_alpha2": "ZM",
-"continent": "AF"
+code: "ZM"
 },
 country= {                                      
 countryName:"Zimbabwe",
-"iso_alpha2": "ZW",
-"continent": "AF"
+code: "ZW"
 }, }                                   
