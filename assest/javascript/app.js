@@ -963,7 +963,7 @@ for (var i = 0; i < countrylist.length; i++) {
 }
 
 
-$('#submit').on("click", function() {
+$('.waves-effect').on("click", function() {
     var countryCode = $('#country').val();
 
     for (var i = 0; i < countrylist.length; i++) {
