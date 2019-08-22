@@ -24,22 +24,38 @@
                 <p class="">So, where to?</p>
             </div>
         </div>
+        <!-- add slideshow -->
+        <div class="carousel carousel-slider center">
+                <div class="carousel-item red white-text" href="#one!">
+                  <h2>Spain</h2>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Dubai</h2>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Italy</h2>
+                </div>
+              </div>
+        <!-- end slideshow -->
         <div class="row">
             <form class="col s12">
                 <div class="row">
-                    <div class="input-field col m6">
+                   <div class="input-field col m6">
                         <i class="material-icons prefix">near_me</i>
-                        <input id="location" type="text" class="validate" placeholder="Where are you?">
+                        <input id="location" type="text" placeholder="Where are you?">
                     </div>
                     <div class="input-field col m6">
                         <i class="material-icons prefix">public</i>
-                        <input id="country" name="search" list="search" type="text" class="validate"
-                            placeholder="Where to?">
+                        <input id="country" name="search" list="search" type="text" placeholder="Where to?">
                         <datalist id="search"></datalist>
                     </div>
                 </div>
                 <a class="waves-effect waves-light btn"><i class="material-icons right">flight_takeoff</i>Let's Go</a>
             </form>
+        </div>
+        <!-- display div -->
+        <div id="display" class="display">
+
         </div>
 
     </div>
