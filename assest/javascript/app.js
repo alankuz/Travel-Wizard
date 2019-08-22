@@ -955,13 +955,24 @@ var countrylist = [
     },
 ];
 
+
+
+
+for (var i = 0; i < countrylist.length; i++) {
+    $('#search').append('<option value="' + countrylist[i].countryName + '">')
+}
+
+
 $('#submit').on("click", function() {
-    var countryCode = $('#counrty').val().trim();
+    var countryCode = $('#country').val();
+
     for (var i = 0; i < countrylist.length; i++) {
-        if (countryCode === countrylist[i].country.countryName) {
+
+        if (countryCode === countrylist[i].countryName) {
             console.log(countrylist[i].code);
             break;
         }
-
     }
+
+    return false;
 });
