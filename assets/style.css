@@ -1,11 +1,18 @@
 .spain { 
-    background-image: url("assets/images/spain.jpg") 
+    background-image: url("images/spain.jpg");
+    background-size: cover; 
 }
 
 .dubai { 
-    background-image: url("assets/images/dubai.jpg") 
+    background-image: url("images/dubai.jpg");
+    background-size: cover; 
 }
 
 .italy { 
-    background-image: url("assets/images/italy.jpg") 
+    background-image: url("images/italy.jpg");
+    background-size: cover;  
+}
+
+.carousel .carousel-item {
+    visibility: visible;
 }
