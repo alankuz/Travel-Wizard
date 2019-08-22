@@ -16,3 +16,16 @@
 .carousel .carousel-item {
     visibility: visible;
 }
+
+.brand {
+    display: inline-block;
+}
+
+/* add this class on click/submit to #slideshow */
+.hide-me {
+    display: none;
+}
+/* add this class on click/submit to #display */
+.show-me {
+    display: inline-block;
+}

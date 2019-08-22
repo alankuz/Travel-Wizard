@@ -7,59 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript- Materialize -->
-    
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom Style -->
     <link rel="stylesheet" href="assets/style.css">
-
     <title>TravelWizard</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h2><i class="medium material-icons">public</i>TravelWizard</h2>
-                <p class="">So, where to?</p>
+                <h2 class="brand">TravelWizard<i class="medium material-icons">public</i></h2><span><em> So, where
+                        to?</em></span>
             </div>
         </div>
-        <!-- add slideshow -->
-        <div class="row">
-        <div class="carousel carousel-slider center">
-            <div class="carousel-fixed-item">
-                
-            </div>
+        <!-- Slideshow -->
+        <div class="row" id="slideshow">
+            <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item">
+
+                </div>
                 <div class="carousel-item spain">
-                  <h2>Spain</h2>
-                  <p class="white-text">This is your first panel</p>
+                    <h2 class="white-text">Spain</h2>
                 </div>
                 <div class="carousel-item dubai">
-                  <h2>Dubai</h2>
-                  <p class="white-text">This is your second panel</p>
+                    <h2 class="white-text">Dubai</h2>
                 </div>
                 <div class="carousel-item italy">
-                  <h2>Italy</h2>
-                  <p class="white-text">This is your third panel</p>
+                    <h2 class="white-text">Italy</h2>
                 </div>
-                
-              </div>
             </div>
+        </div>
         <!-- end slideshow -->
         <div class="row">
             <form class="col s12">
                 <div class="row">
-                   <div class="input-field col m6">
+                    <div class="input-field col s12 m6">
                         <i class="material-icons prefix">near_me</i>
                         <input id="location" type="text" placeholder="Where are you?">
                     </div>
-                    <div class="input-field col m6">
+                    <div class="input-field col s12 m6">
                         <i class="material-icons prefix">public</i>
                         <input id="country" name="search" list="search" type="text" placeholder="Where to?">
                         <datalist id="search"></datalist>
                     </div>
                 </div>
-                <a class="waves-effect waves-light btn-large"><i class="material-icons right">flight_takeoff</i>Let's Go</a>
+                <a class="waves-effect waves-light btn-large"><i class="material-icons right">flight_takeoff</i>Let's
+                    Go</a>
             </form>
         </div>
         <!-- display div -->
@@ -72,8 +67,9 @@
 
     </div>
 
-
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
