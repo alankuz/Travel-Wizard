@@ -955,19 +955,24 @@ var countrylist = [
     },
 ];
 
-console.log(countrylist[0].countryName);
+
+
+
+for (var i = 0; i < countrylist.length; i++) {
+    $('#search').append('<option value="' + countrylist[i].countryName + '">')
+}
 
 
 $('#submit').on("click", function() {
     var countryCode = $('#country').val();
 
-
-
     for (var i = 0; i < countrylist.length; i++) {
+
         if (countryCode === countrylist[i].countryName) {
             console.log(countrylist[i].code);
             break;
         }
-
     }
+
+    return false;
 });

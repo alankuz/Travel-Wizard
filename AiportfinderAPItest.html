@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="startLat"></div>
+<div id="startLon"></div>
+<div id="countrycode"></div>
+
+<input type="text" id="tester" value="">Put city name here<button id="click">click</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        window.onload = function() {
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess);
+};
+$(document).on('click', '#click', function () {
+    var city = $('#tester').val();
+    var url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-text?text="+ city;
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": url,
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "cometari-airportsfinder-v1.p.rapidapi.com",
+                "x-rapidapi-key": "b2bff32602msh6bac28253bdbea6p19eb1cjsnef08e1be8d06"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(url) 
+            console.log(response);
+            $('#countrycode').html('<p>' + response[0].countryCode + '</p>')
+            for (i=0; i<response.length; i++){
+            $('#countrycode').append('<p>' + response[i].name + '</p>')
+            $('#countrycode').append('<p>' + response[i].code + '</p>')
+            $('#countrycode').append('<p>' + response[i].location.latitude + ' ' + response[i].location.longitude + '</p><hr>')
+            }
+
+
+
+        });})
+    </script>
+</body>
+
+</html>
