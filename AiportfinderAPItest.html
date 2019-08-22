@@ -9,50 +9,113 @@
 </head>
 
 <body>
-<div id="startLat"></div>
-<div id="startLon"></div>
-<div id="countrycode"></div>
+    <div id="startLat"></div>
+    <div id="startLon"></div>
+    <div id="airportdisp"></div>
+    <div id="countrycode"></div>
 
-<input type="text" id="tester" value="">Put city name here<button id="click">click</button>
+    <input type="text" id="tester" value="">Put city name here<button id="click">click</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        window.onload = function() {
-  var startPos;
-  var geoSuccess = function(position) {
-    startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
-};
-$(document).on('click', '#click', function () {
-    var city = $('#tester').val();
-    var url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-text?text="+ city;
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": url,
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "cometari-airportsfinder-v1.p.rapidapi.com",
-                "x-rapidapi-key": "b2bff32602msh6bac28253bdbea6p19eb1cjsnef08e1be8d06"
+        var ulat;
+        var ulong;
+        window.onload = function () {
+            var startPos;
+            var geoSuccess = function (position) {
+                startPos = position;
+                document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+                document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+                ulat = startPos.coords.latitude;
+                ulong = startPos.coords.longitude;
+            };
+            navigator.geolocation.getCurrentPosition(geoSuccess);
+
+
+
+
+
+
+        };
+
+
+
+
+
+
+
+        // ---------------------------------------------------------
+
+        // -------------------------------------------------
+
+
+
+
+
+
+
+        $(document).on('click', '#click', function () {
+            $('#countrycode').html ('');
+            $('#airportdisp').html ('');
+            var settings2 = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-radius?radius=50&lng=" + ulong + "&lat=" + ulat,
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "cometari-airportsfinder-v1.p.rapidapi.com",
+                    "x-rapidapi-key": "b2bff32602msh6bac28253bdbea6p19eb1cjsnef08e1be8d06"
+                }
             }
-        }
 
-        $.ajax(settings).done(function (response) {
-            console.log(url) 
-            console.log(response);
-            $('#countrycode').html('<p>' + response[0].countryCode + '</p>')
-            for (i=0; i<response.length; i++){
-            $('#countrycode').append('<p>' + response[i].name + '</p>')
-            $('#countrycode').append('<p>' + response[i].code + '</p>')
-            $('#countrycode').append('<p>' + response[i].location.latitude + ' ' + response[i].location.longitude + '</p><hr>')
+            $.ajax(settings2).done(function (response2) {
+                console.log(response2);
+                for (x = 0; x < response2.length; x++) {
+                    $('#airportdisp').append('<p>Airport Name: ' + response2[x].name + '</p>');
+                    $('#airportdisp').append('<p>City: ' + response2[x].city + '</p>');
+                    $('#airportdisp').append('<p>Aiport ID: ' + response2[x].airportId + '</p>');
+                }
+                $('#airportdisp').prepend('<h1>Aiports around you based on your location.</h1>');
+
+            });
+            // ------------------------------------------------------------------------------------
+
+            var city = $('#tester').val();
+            if (city === ""){
+                city = 'Tester!'
+            }
+            var url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-text?text=" + city;
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url,
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "cometari-airportsfinder-v1.p.rapidapi.com",
+                    "x-rapidapi-key": "b2bff32602msh6bac28253bdbea6p19eb1cjsnef08e1be8d06"
+                }
             }
 
+            $.ajax(settings).then(function (response) {
+                console.log(url)
+                console.log(response);
+                $('#countrycode').html('<p>' + response[0].countryCode + '</p>')
+                for (i = 0; i < response.length; i++) {
+                    $('#countrycode').append('<p>' + response[i].name + '</p>')
+                    $('#countrycode').append('<p>' + response[i].code + '</p>')
+                    $('#countrycode').append('<p>' + response[i].location.latitude + ' ' + response[i].location.longitude + '</p><hr>')
+                }
+                $('#countrycode').prepend('<h1>Aiports around you based on your chosen country</h1>');
 
 
-        });})
+
+
+            })
+            .catch(function(error) {
+                console.log('hello')
+                $('#countrycode').prepend('<h1>City does not contain a Aiport try agian.</h1>');
+            });
+        })
     </script>
 </body>
 
