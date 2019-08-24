@@ -993,4 +993,6 @@ $('.waves-effect').on("click", function() {
     }
 
     return false;
+
+
 });
