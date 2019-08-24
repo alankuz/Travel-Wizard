@@ -29,3 +29,42 @@
 .show-me {
     display: inline-block;
 }
+#currency {
+    width: 50%;
+    text-align: left;
+}
+.content {
+    padding-bottom: 20px;
+}
+/* materialize red #f44336 */
+/* M color info */
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+    color: #f44336;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #f44336;
+    box-shadow: 0 1px 0 0 #f44336;
+  }
+
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #f44336;
+  }
+
+  /* M field color */
+      /* Inactive/Active Default input field color */
+      .input-field input[type]:not([readonly]),
+      .input-field input[type]:focus:not([readonly]),
+      .input-field textarea:not([readonly]),
+      .input-field textarea:focus:not([readonly]) {
+          border-bottom: 1px solid #000;
+          box-shadow: 0 1px 0 0 #000;
+      }
+  
+      /* Inactive/Active Default input label color */
+      .input-field input[type]:focus:not([readonly])+label,
+      .input-field textarea:focus:not([readonly])+label {
+          color: #000;
+      }
