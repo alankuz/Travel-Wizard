@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+#slideshow {
+    box-shadow: 6px 6px 4px rgb(150, 138, 138);
+}
+
 .safety {
     text-align: center;
 }
