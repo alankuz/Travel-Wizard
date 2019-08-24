@@ -3,7 +3,7 @@
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://currency-converter5.p.rapidapi.com/currency/historical/2018-02-09?format=json&to=AUD&from=AUD&amount=1",
+	"url": "https://currency-converter5.p.rapidapi.com/currency/historical/2018-02-09?format=json&to=AUD&from=USD&amount=1",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "currency-converter5.p.rapidapi.com",
