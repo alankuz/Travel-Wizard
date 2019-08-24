@@ -24,10 +24,10 @@ window.onload = function() {
           $.ajax(settings).done(function (response) {
               console.log(url) 
               console.log(response);
-              $('#display').html('<h1>Airports Near Your Location:</h1><p>' + response[0].countryCode + '</p>')
+              $('#airport-finder').html('<h4>Airports Near Your Location:</h4><p>Country: ' + response[0].countryCode + '</p>')
               for (i=0; i<response.length; i++){
-              $('#display').append('<p>' + response[i].name + '</p>')
-              $('#display').append('<p>' + response[i].code + '</p><hr>')
+              $('#airport-finder').append('<p>Airport Name: ' + response[i].name + '</p>')
+              $('#airport-finder').append('<p>Airport Code: ' + response[i].code + '</p><hr>')
               }
   
   
