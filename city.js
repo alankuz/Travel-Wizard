@@ -738,14 +738,17 @@ $('.waves-effect').on("click", function() {
     $.ajax(cityFinder).done(function(city) {
         console.log(city);
         var coutries = city[0].name;
-        console.log(coutries);
+        // console.log(coutries);
         var coutryNative = city[0].nativeName;
-        console.log(coutryNative);
+        // console.log(coutryNative);
         var countryCapital = city[0].capital;
-        console.log(countryCapital);
+        // console.log(countryCapital);
         var countryCurrency = city[0].currencies[0];
-        console.log(countryCurrency);
+        // console.log(countryCurrency);
+        var counrtyCallingCode = city[0].callingCodes;
+        // console.log(counrtyCallingCode);
         var amount = $("#money").val();
+
         var currencyFinder = {
             "async": true,
             "crossDomain": true,
@@ -759,15 +762,34 @@ $('.waves-effect').on("click", function() {
 
         $("#counrty").html("<h1>" + coutries + "</h1>");
         $("#native").html("<h2> Native country name is " + coutryNative + "</h2>");
-        $("#capital").html("<h3> The capital of the country is " + countryCapital + "</h3>")
+        $("#capital").html("<h3> The capital of " + coutries + " is " + countryCapital + "</h3>")
+        $("#numericCode").html("<h3> The calling code of " + coutries + " is " + counrtyCallingCode + "</h3>")
 
         $.ajax(currencyFinder).done(function(currency) {
             var userMoney = parseInt(currency * amount)
             $("#currency").html("<h3>You have " + userMoney + " " + countryCurrency + "</h3>")
 
-            console.log(userMoney + " " + countryCurrency);
+            // console.log(userMoney + " " + countryCurrency);
         });
 
+        var rating = city[0].alpha2Code;
+        var queryURL = 'https://www.travel-advisory.info/api?countrycode=' + rating;
+        $.ajax({
+                url: queryURL,
+                method: "GET"
+            })
+            .then(function(rate) {
+                var countryRate = rate.data[rating].advisory.score;
+                console.log(countryRate);
+                if (countryRate <= 2) {
+                    $("#rating").html("<h3> It is one the safest country </h3>")
+
+                } else if (countryRate > 2 && countryRate <= 4) {
+                    $("#rating").html("<h3> It is not so safest country </h3>")
+                } else if (countryRate > 4) {
+                    $("#rating").html("<h3> we recommend moving with a bodyguard</h3>")
+                }
+            });
 
     });
 
@@ -775,7 +797,13 @@ $('.waves-effect').on("click", function() {
     return false;
 
 
+
 });
 
 var correntTime = moment().format('LTS');
 console.log(correntTime);
+
+setInterval(function() {
+    correntTime = moment().format('LTS');
+    $("#currentTime").html(correntTime);
+}, 1000);
