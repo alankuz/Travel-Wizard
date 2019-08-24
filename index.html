@@ -43,15 +43,19 @@
         <div class="row">
             <form class="col s12">
                 <div class="row">
-                    <div class="input-field col s12 m6">
+                    <div class="input-field col s12 m4">
                         <i class="material-icons prefix">near_me</i>
                         <input id="location" type="text" class="validate" placeholder="Where are you?">
                     </div>
-                    <div class="input-field col s12 m6">
+                    <div class="input-field col s12 m4">
                         <i class="material-icons prefix">public</i>
                         <input id="country" name="search" list="search" type="text" class="validate" placeholder="Where to?">
                         <datalist id="search"></datalist>
                     </div>
+                    <div class="input-field col s12 m4">
+                            <i class="material-icons prefix">public</i>
+                            <input id="money" type="number" placeholder="What's your budget?($ USD)">
+                        </div>
                 </div>
                 <a id="submit" class="waves-effect waves-light red btn-large"><i class="material-icons right">flight_takeoff</i>Let's
                     Go</a>
@@ -60,20 +64,6 @@
         <!-- display div -->
         <div class="row content">
         <div class="col s12 m6">
-            <h3>Find a new destination</h3>    
-            <form>
-                        <input id="country" name="search" list="search" type="text" placeholder="Where to?">
-                        <input id="money" type="number" placeholder="How much do you have?">
-                        <datalist id="search"></datalist>
-                        <input id="submit" type="submit" class="waves-effect">
-                    </form>
-                
-                    <div id="result">
-                        <div id="counrty"></div>
-                        <div id="native"></div>
-                        <div id="capital"></div>
-                        <div id="currency"></div>
-                    </div>
         <h3>Currency Converter</h3>
         <p>How far will your budget go? <em>Type in an amount and hit enter.</em></p>
         <div id="currency" class="currency">
@@ -102,10 +92,14 @@
         </div>
         </div>
         <div class="col s12 m6">
-        <div id="display" class="display">
+        <div id="display-search" class="display">
         
 
             </div>
+            <div id="airport-finder" class="display">
+        
+
+                </div>
         </div>
      </div>
     </div>
@@ -115,9 +109,9 @@
     <!-- Compiled and minified JavaScript- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="assets/javascript/app.js"></script>
+    <script src="city.js"></script>
     <script src="assets/javascript/AirportFinder.js"></script>
     <script src="assets/javascript/currencyconverter.js"></script>
-    <script src="city.js"></script>
 
 </body>
 

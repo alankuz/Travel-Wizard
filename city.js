@@ -721,7 +721,7 @@ for (var i = 0; i < countrylist.length; i++) {
 
 $('.waves-effect').on("click", function() {
     var countryCode = $('#country').val().trim();
-
+    $('#slideshow').slideUp();
     console.log(countryCode);
 
     var cityFinder = {
@@ -737,10 +737,10 @@ $('.waves-effect').on("click", function() {
 
     $.ajax(cityFinder).done(function(city) {
         console.log(city);
-        var coutries = city[0].name;
-        console.log(coutries);
-        var coutryNative = city[0].nativeName;
-        console.log(coutryNative);
+        var countries = city[0].name;
+        console.log(countries);
+        var countryNative = city[0].nativeName;
+        console.log(countryNative);
         var countryCapital = city[0].capital;
         console.log(countryCapital);
         var countryCurrency = city[0].currencies[0];
@@ -757,13 +757,13 @@ $('.waves-effect').on("click", function() {
             }
         }
 
-        $("#counrty").html("<h1>" + coutries + "</h1>");
-        $("#native").html("<h2> Native country name is " + coutryNative + "</h2>");
-        $("#capital").html("<h3> The capital of the country is " + countryCapital + "</h3>")
+        // $("#counrty").html("<h2>" + countries + "</h2>");
+        $("#display-search").append("<h4> Native country name: " + countryNative + "</h4>");
+        $("#display-search").append("<h4> Capital city: " + countryCapital + "</h4>")
 
         $.ajax(currencyFinder).done(function(currency) {
             var userMoney = parseInt(currency * amount)
-            $("#currency").html("<h3>You have " + userMoney + " " + countryCurrency + "</h3>")
+            $("#display-search").append("<h4>You have " + userMoney + " " + countryCurrency + "</h4>")
 
             console.log(userMoney + " " + countryCurrency);
         });
