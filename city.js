@@ -742,10 +742,13 @@ $('.waves-effect').on("click", function() {
         var countryNative = city[0].nativeName;
         console.log(countryNative);
         var countryCapital = city[0].capital;
-        console.log(countryCapital);
+        // console.log(countryCapital);
         var countryCurrency = city[0].currencies[0];
-        console.log(countryCurrency);
+        // console.log(countryCurrency);
+        var counrtyCallingCode = city[0].callingCodes;
+        // console.log(counrtyCallingCode);
         var amount = $("#money").val();
+
         var currencyFinder = {
             "async": true,
             "crossDomain": true,
@@ -757,6 +760,7 @@ $('.waves-effect').on("click", function() {
             }
         }
 
+
         // $("#counrty").html("<h2>" + countries + "</h2>");
         $("#display-search").append("<h4> Native country name: " + countryNative + "</h4>");
         $("#display-search").append("<h4> Capital city: " + countryCapital + "</h4>")
@@ -765,9 +769,27 @@ $('.waves-effect').on("click", function() {
             var userMoney = parseInt(currency * amount)
             $("#display-search").append("<h4>You have " + userMoney + " " + countryCurrency + "</h4>")
 
-            console.log(userMoney + " " + countryCurrency);
+            // console.log(userMoney + " " + countryCurrency);
         });
 
+        var rating = city[0].alpha2Code;
+        var queryURL = 'https://www.travel-advisory.info/api?countrycode=' + rating;
+        $.ajax({
+                url: queryURL,
+                method: "GET"
+            })
+            .then(function(rate) {
+                var countryRate = rate.data[rating].advisory.score;
+                console.log(countryRate);
+                if (countryRate <= 2) {
+                    $("#rating").html("<h3> It is one the safest country </h3>")
+
+                } else if (countryRate > 2 && countryRate <= 4) {
+                    $("#rating").html("<h3> It is not so safest country </h3>")
+                } else if (countryRate > 4) {
+                    $("#rating").html("<h3> we recommend moving with a bodyguard</h3>")
+                }
+            });
 
     });
 
@@ -775,7 +797,13 @@ $('.waves-effect').on("click", function() {
     return false;
 
 
+
 });
 
 var correntTime = moment().format('LTS');
 console.log(correntTime);
+
+setInterval(function() {
+    correntTime = moment().format('LTS');
+    $("#currentTime").html(correntTime);
+}, 1000);
