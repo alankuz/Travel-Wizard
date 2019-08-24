@@ -762,12 +762,13 @@ $('.waves-effect').on("click", function() {
 
 
         // $("#counrty").html("<h2>" + countries + "</h2>");
-        $("#display-search").append("<h4> Native country name: " + countryNative + "</h4>");
-        $("#display-search").append("<h4> Capital city: " + countryCapital + "</h4>")
+        // $("#display-search").empty();
+        $("#display-search").html("<h4> Native country name: <b>" + countryNative + "</b></h4>");
+        $("#display-search").append("<h4> Capital city: <b>" + countryCapital + "</b></h4>")
 
         $.ajax(currencyFinder).done(function(currency) {
             var userMoney = parseInt(currency * amount)
-            $("#display-search").append("<h4>You have " + userMoney + " " + countryCurrency + "</h4>")
+            $("#display-search").append("<h4>Your budget is " + userMoney + " " + countryCurrency + "</h4>")
 
             // console.log(userMoney + " " + countryCurrency);
         });
