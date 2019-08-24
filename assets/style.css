@@ -33,8 +33,15 @@
     width: 50%;
     text-align: left;
 }
+
+.hr {
+    color: #000;
+    width: 50%;
+    text-align: center;
+}
+
 .content {
-    padding-bottom: 20px;
+    padding: 7px 0 20px 0;
 }
 /* materialize red #f44336 */
 /* M color info */
