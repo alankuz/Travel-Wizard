@@ -782,14 +782,15 @@ $('.waves-effect').on("click", function() {
             .then(function(rate) {
                 var countryRate = rate.data[rating].advisory.score;
                 console.log(countryRate);
-                if (countryRate <= 2) {
-                    $("#rating").html("<h3> It is one the safest country </h3>")
-
-                } else if (countryRate > 2 && countryRate <= 4) {
-                    $("#rating").html("<h3> It is not so safest country </h3>")
-                } else if (countryRate > 4) {
-                    $("#rating").html("<h3> we recommend moving with a bodyguard</h3>")
-                }
+                if (countryRate < 2) {
+                    $('#rating').html("<i class='material-icons prefix'>mood</i><h3>This is one the safest countries. Nothing to worry about.</h3><i class='material-icons prefix'>mood</i>")
+                } if (countryRate >= 2 && countryRate < 3) {
+                    $("#rating").html("<i class='material-icons prefix'>mood_bad</i><h3>This country is slightly dangerous. Take caution.</h3><i class='material-icons prefix'>mood_bad</i>")
+                } if (countryRate >= 3 && countryRate < 4) {
+                    $("#rating").html("<i class='material-icons prefix'>thumb_down</i><h3>This country is very dangerous, you may want to hire private security.</h3><i class='material-icons prefix'>thumb_down</i>")
+                } if (countryRate >= 4 && countryRate <= 5) {
+                    $("#rating").html("<h3> We recommend you stay away, possible war-zone area. What, are you joining ISIS?</h3>").addClass('flash-red');
+                } 
             });
 
     });
