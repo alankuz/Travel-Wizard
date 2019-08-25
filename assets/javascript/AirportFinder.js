@@ -16,10 +16,11 @@ $("#submit").on('click', function () {
     $.ajax(settings).done(function (response) {
         console.log(url)
         console.log(response);
-        $('#airport-finder').html('<h4>Airports Near Your Location:</h4><p>' + response[0].countryCode + '</p>')
+        $('#airport-finder').empty();
+        $('#airport-finder').html('<h4><i class="material-icons prefix">flight</i> Airports Near You:</h4><p>Origin: ' + response[0].countryCode + '</p>')
         for (i = 0; i < response.length; i++) {
-            $('#airport-finder').append('<p>' + response[i].name + '</p>')
-            $('#airport-finder').append('<p>' + response[i].code + '</p><hr>')
+            $('#airport-finder').append('<p>Airport Name: ' + response[i].name + '</p>')
+            $('#airport-finder').append('<p>Airport Code: ' + response[i].code + '</p><hr>')
 
             var url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-text?text=" + capitalpush;
             var settings = {
@@ -34,23 +35,19 @@ $("#submit").on('click', function () {
             }
     
             $.ajax(settings).done(function (response) {
-                console.log(url)
+                console.log(url);
                 console.log(response);
                 console.log(capitalpush);
-                $('#airport-finder').append('<h4>Airports Near Your Destination:</h4><p>'  + '</p>')
+                $('#airport-finder').append('<h5><i class="material-icons prefix">flight_land</i> Airports Near Destination:</h5><p>'  + '</p>')
                 for (i = 0; i < response.length; i++) {
-                    $('#airport-finder').append('<p>' + response[i].name + '</p>')
-                    $('#airport-finder').append('<p>' + response[i].code + '</p><hr>')
+                    $('#airport-finder').append('<p>Airport: ' + response[i].name + '</p>')
+                    $('#airport-finder').append('<p>Airport Code: ' + response[i].code + '</p>')
                 }
-    
-    
-    
+      
             });
     
         }
 
   
-
-
     });
 })
