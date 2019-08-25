@@ -762,7 +762,6 @@ $('.waves-effect').on("click", function() {
             }
         }
 
-
         // $("#counrty").html("<h2>" + countries + "</h2>");
         // $("#display-search").empty();
         $("#display-search").html("<h4> Native country name: <b>" + countryNative + "</b></h4>");
@@ -770,7 +769,7 @@ $('.waves-effect').on("click", function() {
 
         $.ajax(currencyFinder).done(function(currency) {
             var userMoney = parseInt(currency * amount)
-            $("#display-search").append("<h4>Your budget is " + userMoney + " " + countryCurrency + "</h4>")
+            $("#display-search").append("<h5>Your budget converts to: <b>" + userMoney + " " + countryCurrency + "</b></h5>")
 
             // console.log(userMoney + " " + countryCurrency);
         });
@@ -783,32 +782,23 @@ $('.waves-effect').on("click", function() {
             })
             .then(function(rate) {
                 var countryRate = rate.data[rating].advisory.score;
+                $('.safety').empty();
+                $('#rating').empty();
                 $('.safety').append("<h4><em>How safe is your destination?</em></h4>");
                 console.log(countryRate);
                 if (countryRate < 2) {
-                    $('#rating').html("<h5><i class='material-icons prefix'>mood</i>This is one the safest countries. Nothing to worry about.<i class='material-icons prefix'>mood</i></h5>")
+                    $('#rating').html("<h5><i class='material-icons prefix'>mood</i> This destination is safe - nothing to worry about. <i class='material-icons prefix'>mood</i></h5>")
                 } if (countryRate >= 2 && countryRate < 3) {
-                    $("#rating").html("<h5><i class='material-icons prefix'>mood_bad</i>This country is slightly dangerous. Take caution.<i class='material-icons prefix'>mood_bad</i></h5>")
+                    $("#rating").html("<h5><i class='material-icons prefix'>sentiment_neutral</i> This country is slightly dangerous. Be cautious! <i class='material-icons prefix'>sentiment_neutral</i></h5>")
                 } if (countryRate >= 3 && countryRate < 4) {
-                    $("#rating").html("<h5>This country is very dangerous, you may want to hire private security.<i class='material-icons prefix'>thumb_down</i></h5>")
+                    $("#rating").html("<h5><i class='material-icons prefix'>thumb_down</i> This country is very dangerous, you may want to hire private security. <i class='material-icons prefix'>thumb_down</i></h5>")
                 } if (countryRate >= 4 && countryRate <= 5) {
-                    $("#rating").html("<h4><i class='material-icons prefix'>pan_tool</i>We recommend you stay away, possible war-zone area. What, are you joining ISIS?<i class='material-icons prefix'>pan_tool</i></h4>").addClass('blink');
+                    $("#rating").html("<h4><i class='material-icons prefix'>pan_tool</i> We recommend you stay away, possible conflict-zone. <i class='material-icons prefix'>pan_tool</i></h4>").addClass('blink');
                 } 
             });
 
     });
 
-
     return false;
 
-
-
 });
-
-var correntTime = moment().format('LTS');
-console.log(correntTime);
-
-setInterval(function() {
-    correntTime = moment().format('LTS');
-    $("#currentTime").html(correntTime);
-}, 1000);

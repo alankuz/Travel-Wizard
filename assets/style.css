@@ -34,21 +34,20 @@
     text-align: left;
 }
 
-@-webkit-keyframes blinker {
+@keyframes blinker {
     from {opacity: 1.0;}
     to {opacity: 0.0;}
   }
 
  .blink{
-    color: red;
-    text-decoration: blink;
+     color: #f44336;
+	text-decoration: blink;
 	-webkit-animation-name: blinker;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-direction: alternate;
 }
-
 
 .hr {
     color: #000;
@@ -67,7 +66,6 @@
 
 #rating {
     text-align: center;
-    display: inline-block;
 }
 
 .content {
