@@ -1,15 +1,16 @@
+/* Main images */
 .spain { 
-    background-image: url("images/spain.jpg");
+    background-image: url("../images/spain.jpg");
     background-size: cover; 
 }
 
 .dubai { 
-    background-image: url("images/dubai.jpg");
+    background-image: url("../images/dubai.jpg");
     background-size: cover; 
 }
 
 .italy { 
-    background-image: url("images/italy.jpg");
+    background-image: url("../images/italy.jpg");
     background-size: cover;  
 }
 
@@ -71,7 +72,7 @@
 .content {
     padding: 7px 0 20px 0;
 }
-/* materialize red #f44336 */
+
 /* M color info */
    /* label focus color */
    .input-field input[type=text]:focus + label {
