@@ -1,4 +1,7 @@
+// This pushes the capital to other API
 var capitalpush;
+
+// List of countries 
 var countrylist = [
     country = {
         countryName: "Andorra"
@@ -715,16 +718,15 @@ var countrylist = [
         countryName: "Zimbabwe",
     }
 ];
-
+// Connects the searched country to the list above 
 for (var i = 0; i < countrylist.length; i++) {
     $('#search').append('<option value="' + countrylist[i].countryName + '">')
 }
 
-$('.waves-effect').on("click", function() {
+// Button wave effect 
+$('.waves-effect').on("click", function () {
     var countryCode = $('#country').val().trim();
     $('#slideshow').slideUp();
-    console.log(countryCode);
-
     var cityFinder = {
         "async": true,
         "crossDomain": true,
@@ -736,19 +738,14 @@ $('.waves-effect').on("click", function() {
         }
     }
 
-    $.ajax(cityFinder).done(function(city) {
-        console.log(city);
+    // Api Ajax Request 
+    $.ajax(cityFinder).done(function (city) {
         var countries = city[0].name;
-        console.log(countries);
         var countryNative = city[0].nativeName;
-        console.log(countryNative);
         var countryCapital = city[0].capital;
         capitalpush = countryCapital
-        // console.log(countryCapital);
         var countryCurrency = city[0].currencies[0];
-        // console.log(countryCurrency);
         var counrtyCallingCode = city[0].callingCodes;
-        // console.log(counrtyCallingCode);
         var amount = $("#money").val();
 
         var currencyFinder = {
@@ -761,31 +758,27 @@ $('.waves-effect').on("click", function() {
                 "x-rapidapi-key": "0ab4861ed5msh7509d0944643336p175260jsne5c4b2a93083"
             }
         }
-
-        // $("#counrty").html("<h2>" + countries + "</h2>");
-        // $("#display-search").empty();
+        // Pushes info into the divs 
         $("#display-search").html("<h4> Native country name: <b>" + countryNative + "</b></h4>");
         $("#display-search").append("<h4> Capital city: <b>" + countryCapital + "</b></h4>")
 
-        $.ajax(currencyFinder).done(function(currency) {
+        $.ajax(currencyFinder).done(function (currency) {
             var userMoney = parseInt(currency * amount)
             $("#display-search").append("<h5>Your budget converts to: <b>" + userMoney + " " + countryCurrency + "</b></h5>")
-
-            // console.log(userMoney + " " + countryCurrency);
         });
 
         var rating = city[0].alpha2Code;
         var queryURL = 'https://www.travel-advisory.info/api?countrycode=' + rating;
         $.ajax({
-                url: queryURL,
-                method: "GET"
-            })
-            .then(function(rate) {
+            url: queryURL,
+            method: "GET"
+        })
+
+            .then(function (rate) {
                 var countryRate = rate.data[rating].advisory.score;
                 $('.safety').empty();
                 $('#rating').empty();
                 $('.safety').append("<h4><em>How safe is your destination?</em></h4>");
-                console.log(countryRate);
                 if (countryRate < 2) {
                     $('#rating').html("<h5><i class='material-icons prefix'>mood</i> This destination is safe - nothing to worry about. <i class='material-icons prefix'>mood</i></h5>")
                 } if (countryRate >= 2 && countryRate < 3) {
@@ -794,7 +787,7 @@ $('.waves-effect').on("click", function() {
                     $("#rating").html("<h5><i class='material-icons prefix'>thumb_down</i> This country is very dangerous, you may want to hire private security. <i class='material-icons prefix'>thumb_down</i></h5>")
                 } if (countryRate >= 4 && countryRate <= 5) {
                     $("#rating").html("<h4><i class='material-icons prefix'>pan_tool</i> We recommend you stay away, possible conflict-zone. <i class='material-icons prefix'>pan_tool</i></h4>").addClass('blink');
-                } 
+                }
             });
 
     });

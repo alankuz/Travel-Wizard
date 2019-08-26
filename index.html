@@ -10,7 +10,7 @@
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom Style -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>TravelWizard</title>
 </head>
 
@@ -49,71 +49,38 @@
                     </div>
                     <div class="input-field col s12 m4">
                         <i class="material-icons prefix">public</i>
-                        <input id="country" name="search" list="search" type="text" class="validate" placeholder="Where to? (country)">
+                        <input id="country" name="search" list="search" type="text" class="validate"
+                            placeholder="Where to? (country)">
                         <datalist id="search"></datalist>
                     </div>
                     <div class="input-field col s12 m4">
-                            <i class="material-icons prefix">attach_money</i>
-                            <input id="money" type="number" placeholder="What's your budget? ($ USD)">
-                        </div>
+                        <i class="material-icons prefix">attach_money</i>
+                        <input id="money" type="number" placeholder="What's your budget? ($ USD)">
+                    </div>
                 </div>
-                <a id="submit" class="waves-effect waves-light red btn-large"><i class="material-icons right">flight_takeoff</i>Let's
+                <a id="submit" class="waves-effect waves-light red btn-large"><i
+                        class="material-icons right">flight_takeoff</i>Let's
                     Go</a>
             </form>
         </div>
         <!-- display div -->
         <div class="row content">
-        <div class="col s12 m6">
-        <div id="display-search" class="display">
-        
+            <div class="col s12 m6">
+                <div id="display-search" class="display">
+
+                </div>
             </div>
-        </div>    
-        <div class="col s12 m6">    
-            <div id="airport-finder" class="display">
-        
+            <div class="col s12 m6">
+                <div id="airport-finder" class="display">
+
+                </div>
             </div>
-        </div>
         </div>
         <hr class="hr">
         <div class="row content">
-                <div class="col s12 safety"> </div>
-                    <span id="rating"> </span>
-                    </div>
-        <!-- Currency Converter in production -->
-     <!-- <div class="row content">
-            <div class="col s12 m6">
-                    <h3>Currency Converter</h3>
-                    <p>How far will your budget go?</p><p><em>Type in an amount and hit enter.</em></p>
-                    <div id="currency" class="currency">
-                        <input class="input-field" type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
-                        <label for="USD"> USD $</label>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div id="currency" class="currency">
-                    
-                        <input class="input-field" type="text" id="GBP" size="10" value="0" onchange="gbpfunc()"/>
-                        <label for="GBP"> GBP £</label>
-                    
-                        </br>
-                    
-                        <input class="input-field" type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
-                        <label for="EUR"> EUR €</label>
-                    
-                        </br>
-                    
-                        <input class="input-field" type="text" id="CAD" size="10" value="0" onchange="cadfunc()" />
-                        <label for="CAD"> CAD $</label>
-                    
-                        </br>
-                    
-                        <input class="input-field" type="text" id="AUD" size="10" value="0" onchange="audfunc()" />
-                        <label for="AUD"> AUD $</label>  
-                    </div>
-                    </div>
-
-     </div> -->
-     <!-- End Currency Converter -->
+            <div class="col s12 safety"> </div>
+            <span id="rating"> </span>
+        </div>
     </div>
 
     <!-- jQuery -->
@@ -121,7 +88,7 @@
     <!-- Compiled and minified JavaScript- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="assets/javascript/app.js"></script>
-    <script src="city.js"></script>
+    <script src="assets/javascript/city.js"></script>
     <script src="assets/javascript/AirportFinder.js"></script>
     <script src="assets/javascript/currencyconverter.js"></script>
 
