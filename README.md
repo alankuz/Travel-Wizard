@@ -2,11 +2,11 @@
 
 This project allows a user to receive detailed information about their destination country to aid in traveling safely. 
 
-##LINK
+## LINK
 
  https://alankuz.github.io/Travel-Wizard/
 
- ##Screen Shots
+ ## Screen Shots
 
  ![Screen1](assets/images/ScreenShot2.png)
  ![Screen2](assets/images/ScreenShot1.png)
