@@ -1,17 +1,18 @@
 /* Main images */
-.spain { 
+
+.spain {
     background-image: url("../images/spain.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
 
-.dubai { 
+.dubai {
     background-image: url("../images/dubai.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
 
-.italy { 
+.italy {
     background-image: url("../images/italy.jpg");
-    background-size: cover;  
+    background-size: cover;
 }
 
 .carousel .carousel-item {
@@ -22,32 +23,48 @@
     display: inline-block;
 }
 
+
 /* add this class on click/submit to #slideshow */
+
 .hide-me {
     display: none;
 }
+
+
 /* add this class on click/submit to #display */
+
 .show-me {
     display: inline-block;
 }
+
 #currency {
     width: 50%;
     text-align: left;
 }
 
 @keyframes blinker {
-    from {opacity: 1.0;}
-    to {opacity: 0.0;}
-  }
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
 
- .blink{
-     color: #f44336;
-	text-decoration: blink;
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 0.5s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-direction: alternate;
+.blink {
+    color: #f44336;
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+#safetySearch {
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px #000;
+    text-align: center;
 }
 
 .hr {
@@ -73,34 +90,49 @@
     padding: 7px 0 20px 0;
 }
 
+
 /* M color info */
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
     color: #f44336;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
     border-bottom: 1px solid #f44336;
     box-shadow: 0 1px 0 0 #f44336;
-  }
+}
 
-  /* icon prefix focus color */
-  .input-field .prefix.active {
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
     color: #f44336;
-  }
+}
 
-  /* M field color */
-      /* Inactive/Active Default input field color */
-      .input-field input[type]:not([readonly]),
-      .input-field input[type]:focus:not([readonly]),
-      .input-field textarea:not([readonly]),
-      .input-field textarea:focus:not([readonly]) {
-          border-bottom: 1px solid #000;
-          box-shadow: 0 1px 0 0 #000;
-      }
-  
-      /* Inactive/Active Default input label color */
-      .input-field input[type]:focus:not([readonly])+label,
-      .input-field textarea:focus:not([readonly])+label {
-          color: #000;
-      }
+
+/* M field color */
+
+
+/* Inactive/Active Default input field color */
+
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* Inactive/Active Default input label color */
+
+.input-field input[type]:focus:not([readonly])+label,
+.input-field textarea:focus:not([readonly])+label {
+    color: #000;
+}
